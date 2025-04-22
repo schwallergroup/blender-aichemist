@@ -1,5 +1,23 @@
-### Init
+## 🤓 Course overview and learning outcomes 
 
+The goal of this mini-workshop is to give you a brief introduction on how to use python to generate atomistic structures ready for Blender. We’ll also provide you with materials for further learning and a few ideas to get you started. 🚀
+
+## Before we continue...
+
+To run this notebook/code snipets you will need only a few packages installed (if you don't have them already). In additon, we will use autoadsorbate (wich only requires rdkit and ase):
+```python
+pip install rdkit
+pip install ase
+pip install autoadsorbate
+```
+We will use these basic packages to construct structures of our choice, using ```SMILES``` and ```*SMILES``` (for more info see: https://github.com/basf/autoadsorbate). We will start by making a few molecular structures, we will construct complex geometries, and finally we will make a trajectory so that we can render images in bulk.
+
+We will use free and portable (no install required) software:
+Blender (download: )
+Inkscape (download: )
+
+### Init
+Let us start with importing the required packages:
 
 ```python
 import numpy as np
@@ -15,26 +33,17 @@ import autoadsorbate as au
 
 #### Converting SMILES into 3D
 
+We can easily convert any ```SMILES``` string into a molecular geometry using the following code:
 
 ```python
 f = au.Fragment('Cc1ccccc1', to_initialize=1)
 atoms = f.get_conformer(0)
 plot_atoms(atoms, rotation='-60x')
-```
-
-
-
-
-    <Axes: >
-
-
-
-
-    
+```    
 ![png](getting_started_files/getting_started_3_1.png)
-    
 
 
+If we have multiple molecules we can use a simple loop to collect all molecules in a list:
 
 ```python
 smiles = [
@@ -46,24 +55,21 @@ smiles = [
 
 molecules = []
 for s in smiles:
-    molecules.append(au.Fragment(s, to_initialize=1).get_conformer(0))
-    
-# view(molecules)
+    molecules.append(au.Fragment(s, to_initialize=1).get_conformer(0)) 
 ```
-
-    [20:14:26] UFFTYPER: Warning: hybridization set to SP3 for atom 0
-    [20:14:26] UFFTYPER: Warning: hybridization set to SP3 for atom 0
-
 
 ### Metal Complex structures
 
-#### helper function
+Unfortunately, rdkit cannot help us with the geometries of the metal complex structures. But it is relatively easy to prepare structures for illustration purposes (or as input for e.g. quantum chemical simulations) using a few tricks:
 
+#### Helper Function
+
+AutoAdsorbate (https://github.com/basf/autoadsorbate) comes with a convenient function ```align_to_vector``` that will orient a ligand (provided as ```*SMILES*```), to an arbitrary cartesian vector. We only need to provide the central metal atom, surrogate smiles of the species attachec to it, and the vectors to define the complex geometry.
 
 ```python
 def get_complex_structure(central_atom, smiles, vectors):
     """"
-    helper function that creates a complex (or interediate) out of
+    helper function that creates a complex (/interediate) out of
     a central metal atom, complex geometry and *SMILES (surrogate smiles).
     For more information on *SMILES see: https://github.com/basf/autoadsorbate
     """
