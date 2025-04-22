@@ -20,14 +20,9 @@ Inkscape (download: )
 Let us start with importing the required packages:
 
 ```python
-import numpy as np
-import seaborn as sns
-
 from ase import Atoms
-from ase.visualize import view
 from ase.visualize.plot import plot_atoms
 from ase.io import read, write
-
 import autoadsorbate as au
 ```
 
@@ -96,29 +91,16 @@ f = au.Fragment('Cl[P](C)(C)C', to_initialize=1) #here we are using the Cl-P bon
 atoms = f.get_conformer(0)
 plot_atoms(atoms, rotation='-60x')
 ```
-
-    [20:12:54] UFFTYPER: Unrecognized charge state for atom: 1
-
-
-
-
-
-    <Axes: >
-
-
-
-
     
 ![png](getting_started_files/getting_started_9_2.png)
-    
 
 
 
 ```python
 # https://en.wikipedia.org/wiki/Tetrahedron
 complex_geometry = {
-    'tetrahedron': [[1,1,1],[-1,-1,1],[1,-1,-1],[-1,1,-1]],
-    'linear': [[0,0,1], [0,0,-1]]
+    'linear': [[0,0,1], [0,0,-1]],
+    'tetrahedron': [[1,1,1],[-1,-1,1],[1,-1,-1],[-1,1,-1]]
 }
 ```
 
