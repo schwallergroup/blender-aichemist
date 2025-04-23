@@ -5,7 +5,7 @@
 - [💻 Before we continue...](#-before-we-continue)
 - [Init](#init)
 - [Preparing assets for Blender](#preparing-assets-for-blender)
-  - [Converting SMILES into 3D](#converting-smiles-into-3d)
+  - [🔨 Converting SMILES into 3D](#-converting-smiles-into-3d)
   - [⚡Metal Complex structures](#metal-complex-structures)
     - [⛑️ Helper Function](#️-helper-function)
     - [💡Make ligand with \*SMILES (surrogate smiles)](#make-ligand-with-smiles-surrogate-smiles)
@@ -43,7 +43,7 @@ import autoadsorbate as au
 
 To visualize molecules in Blender 3D, we need a way of generating their 3D atomic positions, for this we use ```AutoAdsorbate``` (a combination of ```rdkit``` and ```ase```)
 
-### Converting SMILES into 3D
+### 🔨 Converting SMILES into 3D
 
 We can easily convert any ```SMILES``` string into a molecular geometry using the following code:
 
