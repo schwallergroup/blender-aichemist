@@ -28,8 +28,8 @@ pip install autoadsorbate
 We will use these basic packages to construct structures of our choice, using ```SMILES``` and ```*SMILES``` (for more info see: https://github.com/basf/autoadsorbate). We will start by making a few molecular structures, we will construct complex geometries, and finally we will make a trajectory so that we can render images in bulk.
 
 We will use free and portable (no install required) software:
-Blender (download: )
-Inkscape (download: )
+- Blender (download: https://download.blender.org/release/, please use ```blender-3.6.22```)
+- Inkscape (download: https://inkscape.org/release/inkscape-1.4/)
 
 ## Init
 Let us start with importing the required packages:
