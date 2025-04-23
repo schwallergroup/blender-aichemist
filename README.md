@@ -13,6 +13,7 @@
     - [💡PdL2](#pdl2)
     - [💡PdL2Y2](#pdl2y2)
   - [🎥 Make blenderized traj](#-make-blenderized-traj)
+- [🎥 Handson session recornding](#-handson-session-recornding)
 
 ## 🤓 Brief Summary
 
@@ -224,3 +225,12 @@ write('./blend_traj.xyz', blend_traj)
     C13H26Br2MgP2Pd
     C13H26Br2MgP2Pd
     C13H26Br2MgP2Pd
+
+## 🎥 Handson session recornding
+
+Now we will move to the GUI (recording of the handson sesion coming soon):
+```link_to_yt```
+
+Here is the result(!):
+
+<img src="getting_started_files/scheme.png" alt="drawing" width="1000"/>
