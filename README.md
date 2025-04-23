@@ -1,7 +1,7 @@
 ## Table of contents 
 
 - [Table of contents](#table-of-contents)
-- [🤓 Course overview and learning outcomes](#-course-overview-and-learning-outcomes)
+- [🤓 Brief Summary](#-brief-summary)
 - [💻 Before we continue...](#-before-we-continue)
 - [Init](#init)
 - [Preparing assets for Blender](#preparing-assets-for-blender)
@@ -13,7 +13,7 @@
     - [💡PdL2Y2](#pdl2y2)
   - [🎥 Make blenderized traj](#-make-blenderized-traj)
 
-## 🤓 Course overview and learning outcomes 
+## 🤓 Brief Summary
 
 The goal of this mini-workshop is to give you a brief introduction on how to use python to generate atomistic structures ready for Blender. We’ll also provide you with materials for further learning and a few ideas to get you started. 🚀
 
