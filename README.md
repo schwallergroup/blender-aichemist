@@ -27,7 +27,7 @@ We will use these basic packages to construct structures of our choice, using ``
 
 We will use free and portable (no install required) software:
 - Blender (download: https://download.blender.org/release/, please use ```blender-3.6.22```)
-- Inkscape (download: https://inkscape.org/release/inkscape-1.4/)
+- Inkscape (download: https://inkscape.org/release/inkscape-1.4/, any other vector graphics editor will also work)
 
 ## Init
 Let us start with importing the required packages:
