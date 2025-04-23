@@ -3,6 +3,7 @@
 - [Table of contents](#table-of-contents)
 - [🤓 Brief Summary](#-brief-summary)
 - [💻 Before we continue...](#-before-we-continue)
+- [🤓 Some cool things to know / resources:](#-some-cool-things-to-know--resources)
 - [Init](#init)
 - [Preparing assets for Blender](#preparing-assets-for-blender)
   - [🔨 Converting SMILES into 3D](#-converting-smiles-into-3d)
@@ -28,6 +29,13 @@ We will use these basic packages to construct structures of our choice, using ``
 We will use free and portable (no install required) software:
 - Blender (download: https://download.blender.org/release/, please use ```blender-3.6.22```)
 - Inkscape (download: https://inkscape.org/release/inkscape-1.4/, any other vector graphics editor will also work)
+
+## 🤓 Some cool things to know / resources:
+
+- Blender for science video(s): https://youtu.be/uS4GPJDBPt0?si=sLGUmHAOT7VM3rXY
+- Blender shortcut cheat-sheet: https://markoze.com/wp-content/uploads/2024/02/nachazo-blender-cheat-sheet-1200x1697.jpg
+- Render molecule in 50 seconds: https://youtu.be/LPd0AHvBCd0?si=sGfOrMjphO7zNWac
+- MCP x Claude x Blender doing cool stuff together: https://x.com/sidahuj/status/1899586709752594919
 
 ## Init
 Let us start with importing the required packages:
@@ -216,4 +224,3 @@ write('./blend_traj.xyz', blend_traj)
     C13H26Br2MgP2Pd
     C13H26Br2MgP2Pd
     C13H26Br2MgP2Pd
-
