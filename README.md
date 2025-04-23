@@ -99,6 +99,7 @@ def get_complex_structure(central_atom, smiles, vectors):
         complex+=ligand
     return complex
 ```
+We will use this function bellow...
 
 #### 💡Make ligand with *SMILES (surrogate smiles)
 
