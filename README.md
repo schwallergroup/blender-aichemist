@@ -186,7 +186,9 @@ The trajectory we constructed does not fulfill this criterion:
 collected_traj = read('./collected_traj.xyz', index=':')
 
 for a in collected_traj:
-    print(a.get_chemical_formula(empirical=True))
+    formula = a.get_chemical_formula(empirical=True)
+    write('./individual_frames_xyz/{formula}.xyz', a) # let's also write the individual frames to separate xyz files.
+    print(formula)
 ```
 
     C7H8
