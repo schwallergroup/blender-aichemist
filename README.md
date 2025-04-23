@@ -186,7 +186,7 @@ collected_traj = read('./collected_traj.xyz', index=':')
 
 for a in collected_traj:
     formula = a.get_chemical_formula(empirical=True)
-    write('./individual_frames_xyz/{formula}.xyz', a) # let's also write the individual frames to separate xyz files.
+    write(f'./individual_frames_xyz/{formula}.xyz', a) # let's also write the individual frames to separate xyz files.
     print(formula)
 ```
 
@@ -206,7 +206,7 @@ blend_traj = au.utils.get_blenderized(collected_traj, hide_spot=[0,0,-100])
 for a in blend_traj:
     print(a.get_chemical_formula(empirical=True))
     
-write('./collected_traj.xyz', collected_traj)
+write('./blend_traj.xyz', blend_traj)
 ```
 
     C13H26Br2MgP2Pd
@@ -217,6 +217,3 @@ write('./collected_traj.xyz', collected_traj)
     C13H26Br2MgP2Pd
     C13H26Br2MgP2Pd
 
-```python
-
-```
