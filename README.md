@@ -18,7 +18,7 @@
 
 The goal of this mini-workshop is to give you a brief introduction on how to use python to generate atomistic structures ready for Blender. We’ll also provide you with materials for further learning and a few ideas to get you started. 🚀
 
-- Recornding of the full session: https://youtu.be/Usi5mpjowyI
+- Recording of the full session: https://youtu.be/Usi5mpjowyI
 - Shortened version (straight, no intro into Blender): https://youtu.be/aqolcc8YVNI
 
 Here are some cool things to know / resources:
